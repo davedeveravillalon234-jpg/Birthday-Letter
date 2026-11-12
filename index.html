@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<html lang="tl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday JP!</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- BACKGROUND -->
+    <canvas id="fireworks"></canvas>
+    <div class="stars" id="stars"></div>
+
+    <main class="container">
+
+        <!-- INTRO -->
+        <div class="top-label">
+            ✦ A SPECIAL DAY FOR SOMEONE SPECIAL ✦
+        </div>
+
+        <div class="birthday-tag">
+            DECEMBER 12, 2026
+        </div>
+
+        <h1 class="main-title">HAPPY BIRTHDAY</h1>
+
+        <h2 class="jp-name">JP<span>!</span></h2>
+
+        <p class="intro">
+            Today is your day, tol!
+            You deserve all the happiness! 🥳
+        </p>
+
+        <!-- CAKE -->
+        <div class="cake-area">
+
+            <div class="cake">
+
+                <div class="candles">
+
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+
+                </div>
+
+                <div class="cake-top"></div>
+                <div class="cake-middle"></div>
+                <div class="cake-bottom"></div>
+                <div class="plate"></div>
+
+            </div>
+
+        </div>
+
+        <p class="cake-caption">
+            Make a wish, JP! ✨
+        </p>
+
+        <div class="divider">
+            ✦ ───────── ✦
+        </div>
+
+        <!-- FIRST BUTTON -->
+        <button class="main-btn" id="openBtn">
+            💌 OPEN YOUR LETTER
+        </button>
+
+        <!-- LETTER -->
+        <section class="letter hidden" id="letter">
+
+            <div class="letter-header">
+                <span>💌 A LETTER FOR YOU</span>
+                <span class="heart">♥</span>
+            </div>
+
+            <h2>Uy, JP! Happy Birthday! ❤️</h2>
+
+            <p>
+                First of all, happy birthday sa'yo, tol!
+                Another year na naman ang nadagdag sa buhay mo.
+                Sana maging masaya ka today at ma-enjoy mo
+                nang sobra ang special day mo.
+            </p>
+
+            <p>
+                Gusto ko lang din magpasalamat sa'yo.
+                Thank you kasi lagi kang nandiyan, lalo na
+                sa mga times na kailangan ko ng kasama
+                o makakausap.
+
+                Thank you sa lahat ng bagay na nagawa mo
+                para sa akin, kahit yung mga simpleng bagay
+                na baka hindi mo na napapansin.
+            </p>
+
+            <p>
+                Sobrang naa-appreciate ko lahat ng efforts mo,
+                tol. Yung mga tawanan, kulitan, kwentuhan,
+                at kahit yung mga random na moments natin.
+
+                Isa ka sa mga tropang masasabi kong
+                thankful akong nakilala ko.
+            </p>
+
+            <p>
+                Sana alam mo rin na hindi one-sided lahat.
+                Kung ikaw nandiyan para sa akin,
+                nandito rin ako para sa'yo.
+
+                Kapag may problema ka, may gusto kang ikwento,
+                o kahit gusto mo lang ng kakulitan,
+                alam mo na nandito lang ako HAHAHA.
+            </p>
+
+            <p>
+                Sana matupad mo lahat ng goals mo.
+                More blessings, good health, achievements,
+                at happiness.
+
+                Deserve mo rin maging masaya pagkatapos
+                ng lahat ng pagod at challenges mo.
+            </p>
+
+            <p>
+                Basta tol, stay the same.
+                Huwag mong kalimutan na may mga taong
+                thankful dahil naging parte ka ng buhay nila.
+
+                Isa na ako doon.
+            </p>
+
+            <div class="letter-ending">
+
+                <h3>ENJOY YOUR DAY, JP! 🎂</h3>
+
+                <p>
+                    Solid ka talaga, tol.
+                    Salamat sa lahat! ❤️
+                </p>
+
+                <p class="signature">
+                    — From your tropa.
+                </p>
+
+            </div>
+
+            <!-- SECOND BUTTON -->
+            <button class="surprise-btn" id="surpriseBtn">
+                WAIT LANG... MAY ISA PA! 🎁
+            </button>
+
+        </section>
+
+        <!-- PLOT TWIST -->
+        <section class="surprise hidden" id="surprise">
+
+            <div class="surprise-icon">🎁</div>
+
+            <p class="small-label">
+                SECRET MESSAGE UNLOCKED
+            </p>
+
+            <h2>AKALA MO TAPOS NA? HAHAHA!</h2>
+
+            <p>
+                Alam mo, JP, minsan hindi ko man nasasabi
+                nang direkta, pero thankful talaga ako
+                na naging tropa kita.
+            </p>
+
+            <p>
+                Hindi naman kailangan ng bonggang dahilan
+                para i-appreciate ang isang tao.
+
+                Minsan sapat na yung nandiyan siya,
+                tumutulong, nakikinig, at nagpapasaya
+                sa mga simpleng paraan.
+            </p>
+
+            <div class="big-message">
+
+                "ISA KA SA MGA TAONG AYOKONG
+                MAKALIMUTAN ANG MGA PINAGSAMAHAN."
+
+            </div>
+
+            <h2 class="final-title">
+                THANK YOU FOR EVERYTHING, JP! ❤️
+            </h2>
+
+            <p>
+                Hindi lang birthday mo ang celebration ngayon.
+                Celebration din ito dahil may tropang
+                katulad mo sa buhay ko.
+            </p>
+
+            <p>
+                Thank you for everything, tol.
+                Sana marami pa tayong memories na mabuo.
+                Ingat ka palagi at enjoyin mo buhay mo!
+            </p>
+
+            <div class="firework-emoji">
+                🎆 🎇 🎆
+            </div>
+
+            <h2>HAPPY BIRTHDAY! 🎂🎉</h2>
+
+            <button class="again-btn" onclick="celebrateAgain()">
+                ONE MORE FIREWORKS! 🎆
+            </button>
+
+            <!-- FINAL THANK YOU BUTTON -->
+            <button class="thankyou-btn" id="thankyouBtn">
+                WAIT... MAY GUSTO PA AKONG SABIHIN ❤️
+            </button>
+
+        </section>
+
+        <!-- FINAL ANIMATION -->
+        <section id="finalThankYou" class="hidden">
+
+            <div class="heart-container">
+                ❤️ 💗 ❤️
+            </div>
+
+            <p class="small-label">
+                ONE LAST MESSAGE FOR YOU
+            </p>
+
+            <h1 class="thankyou-title">
+                SALAMAT, JP.
+            </h1>
+
+            <div class="typing-box">
+                <p id="typingText"></p>
+            </div>
+
+            <div class="final-heart">❤️</div>
+
+            <h2 class="final-thanks">
+                THANK YOU FOR EVERYTHING, TOL!
+            </h2>
+
+            <p class="last-message">
+                Hindi ko man palaging nasasabi,
+                pero sobrang thankful ako na nandiyan ka.
+                Sana alam mong mahalaga ka bilang tropa.
+
+                <br><br>
+
+                Hanggang sa marami pang birthdays,
+                tawanan, kulitan, at memories natin.
+
+                <br><br>
+
+                SOLID KA PALAGI, JP! ❤️
+            </p>
+
+            <div class="ending-text">
+                MADE WITH LOVE AND APPRECIATION.
+                <br>
+                — YOUR TROPA.
+            </div>
+
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+
+            MADE WITH ❤️ JUST FOR JP
+
+            <br>
+
+            <span>
+                12.12.2026 • A SPECIAL DAY
+            </span>
+
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
